@@ -1,3 +1,7 @@
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
 section {
     height: 500px;
     background-color: white;
@@ -36,4 +40,22 @@ li {
 
 h1 {
     font-size: 90px;
+}
+
+.hero_text {
+    margin-left: 80px;
+}
+
+p{
+    font-size: 30px;
+    margin: 0;
+}
+
+.button {
+    width: 150px; 
+    height: 40px;
+    border-radius: 50px;
+    background-color: coral;
+    text-align: center;
+    font-size: 30px;
 }

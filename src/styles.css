@@ -46,6 +46,10 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-size: 30px;
+}
+
 .hero_area {
     display: flex;
     justify-content: space-between;
@@ -89,7 +93,7 @@ p{
 
 .socials {
     margin-bottom: 300px;
-    margin-right: 30px;
+    margin-right: 25px;
 }
 
 .social {
@@ -100,6 +104,24 @@ p{
     height: 150px;
     margin: 30px;
 }
+
+.sub_section {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.headshot {
+    width: 200px;
+    border-radius: 100px;
+}
+
+.headshot_container {
+    display: flex;
+    align-items: center;
+}
+
+
 /*
 * {
     background: #000 !important;

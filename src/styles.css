@@ -108,7 +108,7 @@ p{
 .sub_section {
     display: flex;
     justify-content: space-around;
-    padding: 30px;
+    padding: 80px;
 }
 
 .headshot {
@@ -121,6 +121,23 @@ p{
     align-items: center;
 }
 
+.project_card {
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+}
+
+.project_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project_section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
 
 /*
 * {

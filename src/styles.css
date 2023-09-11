@@ -48,14 +48,14 @@ h1 {
 
 .hero_area {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
     height: 100%;
+    align-items: center;
 
 }
 
 .hero_text {
-    margin-bottom: 200px;
+    margin-bottom: 300px;
     margin-left: 40px;
 }
 
@@ -78,7 +78,18 @@ p{
     margin-top: 20px;
 }
 
+.button:hover {
+    background-color: #ef744b;
+}
 
+.button:active {
+    background-color: #a9a9a9;
+    color: #808080;
+}
+
+.socials {
+    margin-bottom: 300px;
+}
 /*
 * {
     background: #000 !important;

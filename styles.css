@@ -38,27 +38,31 @@ ul {
 
 li {
     /* width: 200px; */
-    display: flex;
     text-decoration: none;
 }
 
 h1 {
-    font-size: 90px;
+    font-size: 60px;
+    margin: 0;
 }
 
 .hero_area {
-    justify-content: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
 
 }
 
 .hero_text {
-    justify-content: left;
+    margin-bottom: 200px;
     margin-left: 40px;
 }
 
 p{
     display: flex;
     font-size: 30px;
+    font-weight: 200;
     margin: 0;
 }
 

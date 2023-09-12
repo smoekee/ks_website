@@ -6,7 +6,6 @@ body {
 section {
 
     background-color: white;
-    border: solid black 1px;
 
 }
 
@@ -65,7 +64,7 @@ h2 {
 
 p{
     display: flex;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 200;
     margin: 0;
 }
@@ -123,8 +122,8 @@ p{
 
 .project_card {
     width: 300px;
-    height: 400px;
-    border: 1px solid black;
+    height: 500px;
+    box-shadow: 5px 5px 20px grey;
 }
 
 .project_container {

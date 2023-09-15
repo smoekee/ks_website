@@ -6,6 +6,7 @@ body {
 
 .hero {
     width: 100vw;
+    height: 100vh;
     color: white;
     font-size: 40px;
 
@@ -21,6 +22,7 @@ footer {
 nav {
     display: flex;
     justify-content: space-between; /* research */
+    text-shadow: 3px 3px 3px black;
 }
 
 ul {
@@ -68,6 +70,7 @@ h2 {
 .hero_text {
     margin-bottom: 300px;
     margin-left: 40px;
+    text-shadow: 3px 3px 3px black;
 }
 
 p{
@@ -107,6 +110,7 @@ p{
 .socials {
     margin-bottom: 300px;
     margin-right: 25px;
+    filter: drop-shadow(3px 3px 3px black);
 }
 
 .social {
@@ -116,6 +120,7 @@ p{
 .logo {
     height: 150px;
     margin: 30px;
+    border-radius: 125px;
 }
 
 .sub_section {
@@ -152,6 +157,7 @@ p{
 .project_section {
     display: flex;
     flex-direction: column;
+    background-color: white;
     text-align: center;
     padding: 30px;
 }

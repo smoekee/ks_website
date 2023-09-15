@@ -120,6 +120,7 @@ p{
 .logo {
     height: 150px;
     margin: 30px;
+    filter: drop-shadow(3px 3px 3px black);
     border-radius: 125px;
 }
 

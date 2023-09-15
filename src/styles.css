@@ -3,15 +3,9 @@ body {
     margin: 0;
 }
 
-section {
-
-    background-color: white;
-
-}
 
 .hero {
     width: 100vw;
-    background-color: #1c1d25;
     color: white;
     font-size: 40px;
 
@@ -59,6 +53,18 @@ h2 {
 
 }
 
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
 .hero_text {
     margin-bottom: 300px;
     margin-left: 40px;
@@ -66,8 +72,8 @@ h2 {
 
 p{
     display: flex;
-    font-size: 25px;
-    font-weight: 200;
+    font-size: 20px;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -114,6 +120,7 @@ p{
 
 .sub_section {
     display: flex;
+    background-color: white;
     justify-content: space-around;
     padding: 80px;
 }
@@ -135,8 +142,10 @@ p{
     margin: 10px;
 }
 
+
 .project_container {
     display: flex;
+    background-color: white;
     justify-content: space-around;
 }
 

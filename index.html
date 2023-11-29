@@ -96,7 +96,7 @@
 
 
     <section class="leaflet" style="margin-top: 50px;">
-        <h2>South Jersey Solar Power Generation & Transmission Webmap</h2>
+        <h2>Southern Jersey Solar Power Generation & Transmission</h2>
             <div id="map" 
                 style=
                 "margin: auto;
@@ -131,7 +131,12 @@
                         </div></div></div></div>
             <script>
     
-                const map = L.map('map').setView([39.499070120681694, -74.83074675266845], 9);
+                const map = L.map('map',{
+                    zoomSnap: 0.1,
+                    zoomDelta: 0.1,
+
+                }
+                ).setView([39.499070120681694, -74.83074675266845], 8.5);
                
                 const tiles = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
                     maxZoom: 19,

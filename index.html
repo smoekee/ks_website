@@ -149,6 +149,26 @@
                     iconUrl: 'src/red-square-svgrepo-com.svg',
                     iconSize: [20],
                 });
+
+                
+    
+                /*Legend specific*/
+                var legend = L.control({ position: "topright" });
+
+                legend.onAdd = function(map) {
+                var div = L.DomUtil.create("div", "legend");
+                div.innerHTML += "<h4>Southern NJ Solar Network</h4>";
+                div.innerHTML += '<i style="background: #ea5a47"></i><span>Substations</span><br>';
+                div.innerHTML += '<i style="background: #f1b31c"></i><span>Solar Installations</span><br>';
+                div.innerHTML += '<i style="background: white"></i><span>Transmission Lines</span><br>';
+                div.innerHTML += '<i style="background: black"></i><span>County Borders</span><br>';
+
+                return div;
+                };
+
+                legend.addTo(map);
+
+
     
                 var trans_lines = {
                     "type": "FeatureCollection",
@@ -612,28 +632,28 @@
                 </p></p>
                 
                 <br>
-                <p><b>Languages:</b></p>
-                <br><p>Python, SQL, Javascript, HTML, CSS</p>
+                <p style='text-align: left'><b>Languages:</b></p>
+                <br><p style='text-align: left'>Python, SQL, Javascript, HTML, CSS</p>
                 <br>
-                <p><b>Tech:</b></p>
+                <p style='text-align: left'><b>Tech:</b></p>
                 <br>
                 <p style='text-align: left'>GeoPandas, GeoDjango, Leaflet.js, 
                     PostgreSQL/PostGIS, GeoServer, 
                     Linux Ubuntu</p>
                 <br>
-                <p><b>Commercial software toolkit:</b></p>
+                <p style='text-align: left'><b>Commercial software toolkit:</b></p>
                     <br><p style='text-align: left'>Bentley MicrostationCE, GE
                     Smallworld, ESRI ArcGIS,
                     Autodesk Civil 3D, Microsoft Office,
                     Adobe Creative Suite, Agisoft
                     Metashape</p>
                 <br>
-                <p><b>Open source software toolkit:</b></p>
-                    <br><p>Visual Studio Code, QGIS,
+                <p style='text-align: left'><b>Open source software toolkit:</b></p>
+                    <br><p style='text-align: left'>Visual Studio Code, QGIS,
                     BlenderBIM, Meshroom, Cloud
                     Compare, OpenDroneMap</p>
                 <br>
-                <p><b>Part 107 FAA Licensed
+                <p style='text-align: left'><b>Part 107 FAA Licensed
                     Remote Drone Pilot</b></p>
             </p>
         </div>

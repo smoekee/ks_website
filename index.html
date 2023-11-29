@@ -150,15 +150,6 @@
                     iconSize: [20],
                 });
     
-                function onMapClick(e) {
-                    popup
-                        .setLatLng(e.latlng)
-                        .setContent(`You clicked the map at ${e.latlng.toString()}`)
-                        .openOn(map);
-                }
-    
-                map.on('click', onMapClick);
-    
                 var trans_lines = {
                     "type": "FeatureCollection",
                     "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
@@ -391,11 +382,13 @@
                                 weight: 1
                                 
                             }
-                        }
-                    }).addTo(map);
+                        }}
+
+                   
+                    ).addTo(map);
 
 
-                var geojson2 = {
+                var substations = {
 
                 "type": "FeatureCollection",
                 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::4269" } },
@@ -482,7 +475,7 @@
                 ]
                 }
 
-                L.geoJSON(geojson2, {
+                L.geoJSON(substations, {
                 
                 pointToLayer: function(geoJsonPoint, latlng) {
                     return L.marker(latlng,
@@ -490,11 +483,12 @@
                         icon:subIcon
                     });
                        
-                    }}
-                                
-                ).addTo(map);
-
-
+                    },
+                   
+                onEachFeature: function (f, l) {
+                    l.bindPopup('<pre>'+JSON.stringify(f.properties,null,' ').replace(/[\{\}"]/g,'')+'</pre>');
+                    }
+                    }).addTo(map);
 
                 var solar = {
 
@@ -566,10 +560,16 @@
                         icon:solarIcon
                     });
                        
+                    },
+                    
+                   
+                    onEachFeature: function (f, l) {
+                    l.bindPopup('<pre>'+JSON.stringify(f.properties,null,' ').replace(/[\{\}"]/g,'')+'</pre>');
                     }
-                                } 
+                    })
+                                 
 
-                    ).addTo(map);
+                    .addTo(map);
                     
 
                 var geojson4 = {
@@ -593,7 +593,9 @@
                             fillOpacity: '0',
                             
                         }
-                }}).addTo(map);
+                },
+          
+            }).addTo(map);
 
 
     </script>

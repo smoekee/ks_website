@@ -133,7 +133,7 @@
     
                 const map = L.map('map',{scrollWheelZoom: false}).setView([39.499070120681694, -74.83074675266845], 9);
                
-                const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                const tiles = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
                     maxZoom: 19,
                     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
                 }).addTo(map);
@@ -142,12 +142,12 @@
 
                 var solarIcon = L.icon({
                     iconUrl: 'src/icon_solar.svg',
-                    iconSize: [25],
+                    iconSize: [15],
                 });
 
                 var subIcon = L.icon({
                     iconUrl: 'src/red-square-svgrepo-com.svg',
-                    iconSize: [25],
+                    iconSize: [15],
                 });
     
                 function onMapClick(e) {
@@ -387,7 +387,9 @@
                     L.geoJSON(trans_lines, {
                         style: function(feature) {
                             return {
-                                color: '#0000FF'
+                                color: 'white',
+                                weight: 0.75
+                                
                             }
                         }
                     }).addTo(map);

@@ -133,7 +133,6 @@
     
                 const map = L.map('map',{
                     zoomSnap: 0.1,
-                    zoomDelta: 0.1,
 
                 }
                 ).setView([39.499070120681694, -74.83074675266845], 8.5);
@@ -142,6 +141,11 @@
                     maxZoom: 19,
                     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
                 }).addTo(map);
+
+                map.fitBounds([
+                [40.30612637492359, -73.97280860624575],
+                [38.800979697437434, -75.6257212230188]
+                ]);
 
                 var popup = L.popup();
 
@@ -668,9 +672,9 @@
             </div>
 -->
 
-    <footer id="Contact">
-        <h2 style="text-align: center">Contact Me</h2>
-        <h3 style="text-align: center">schmalzes@gmail.com</h3>
+    <footer id="Contact" style="text-align: center;">
+        <h2>Contact Me</h2>
+        <h3>schmalzes@gmail.com</h3>
     </footer>
 
     <script src="src/app.js"> </script>

@@ -178,7 +178,7 @@
                 legend.addTo(map);
 
 
-    
+                /*DATA*/
                 var trans_lines = {
                     "type": "FeatureCollection",
                     "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
@@ -510,14 +510,13 @@
                     return L.marker(latlng,
                     {
                         icon:subIcon
-                    });
-                       
-                    },
+                    })},
                    
                 onEachFeature: function (f, l) {
                     l.bindPopup('<pre>'+JSON.stringify(f.properties,null,' ').replace(/[\{\}"]/g,'')+'</pre>');
                     }
-                    }).addTo(map);
+
+                }).addTo(map);
 
                 var solar = {
 
@@ -637,8 +636,8 @@
             <h2 style='text-align: left'>About Kevin Schmalz</h2>
             <p>
                 <p style='text-align: left'>I use data, technology and practical experience to add value and solve problems.
-                <br><p style='text-align: left'>My interests are in utilizing geomatics (surveying/remote sensing), geographical information systems and software engineering for the development of spatial data applications for the architecture, engineering and construction industries.
-                </p></p>
+                <br><p style='text-align: left'>My interests are in utilizing geomatics (surveying/remote sensing), geographical information systems and 
+                <br><p style='text-align: left'>software engineering for the development of spatial data applications for the architecture, engineering and construction industries.</p></p></p>
                 
                 <br>
                 <p style='text-align: left'><b>Languages:</b></p>

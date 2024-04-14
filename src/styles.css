@@ -168,6 +168,7 @@ p{
 .project_section {
     display: flex;
     flex-direction: column;
+	justify-content:space-between;
     background-color: white;
     text-align: center;
     padding: 30px;

@@ -962,15 +962,7 @@ $arrow-line-width: 4px;
   transform: translate(-50%, -50%) rotateZ($rot);
 }
 
-// base
-html {
-  height: 100%;
-}
-body {
-  background: #000;
-  position: relative;
-  height: 100%;
-}
+
 
 // arrows
 .arrow-container {
